@@ -1,0 +1,102 @@
+.app__findus {
+  display: flex;
+  width: 100%;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  flex-direction: column;
+}
+
+.app__findus h4 {
+  font-family: var(--font-alt);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.app__findus-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.app__findus-content p {
+  font-family: var(--font-alt);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.app__findus-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.app__findus-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  position: relative;
+}
+
+.app__findus-newsletter input {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: none;
+  width: 250px;
+  padding: 0.2rem;
+}
+
+.app__findus-newsletter input:focus {
+  outline: none;
+}
+
+.app__findus-newsletter button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1%;
+  left: 94%;
+  color: #000;
+  transition: 0.2s ease-in;
+}
+.app__findus-newsletter button:hover {
+  left: 92%;
+}
+
+@media screen and (max-width: 69em) {
+  .app__findus-image img {
+    width: 250px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .app__findus-image img {
+    width: 180px;
+    height: auto;
+  }
+  .app__findus-container {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .app__findus-container {
+    margin-top: 1rem;
+  }
+  .app__findus-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .app__findus-content {
+    gap: 2rem;
+  }
+}

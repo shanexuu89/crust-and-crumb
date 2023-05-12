@@ -1,0 +1,21 @@
+.app__maquee-product {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.3125rem;
+}
+
+.app__marquee-product_text {
+  padding: 0.5rem;
+}
+
+.app__marquee-product_text h4 {
+  font-family: var(--font-alt);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.app__marquee-product_text p {
+  font-family: var(--font-base);
+  font-size: 0.75rem;
+}

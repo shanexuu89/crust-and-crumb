@@ -1,0 +1,145 @@
+.app__menuitem {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.app__menuitem-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.app__menuitem-container-img img {
+  width: 550px;
+  height: auto;
+}
+
+.grid--2-cols {
+  justify-items: center;
+}
+
+.app__menuitem-buttons {
+  position: absolute;
+  right: 3rem;
+}
+
+.app__menuitem-buttons button {
+  background: none;
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: var(--font-alt);
+}
+
+.app__menuitem-buttons button:hover {
+  text-decoration: underline;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  line-height: 1.875rem;
+  font-family: var(--font-alt);
+  font-size: 0.75rem;
+  font-weight: 400;
+  border-top: 2px solid #000;
+  margin-top: 1.75rem;
+}
+
+td {
+  border-bottom: 1px solid #000;
+}
+
+td:nth-child(2) {
+  text-align: right;
+}
+
+.app__menuitem-container-menu p {
+  font-family: var(--font-base);
+  font-size: 1.375rem;
+}
+
+.app__menuitem-container-menu img {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 69em) {
+  .app__menuitem-container-img img {
+    width: 300px;
+    height: auto;
+  }
+  .app__menuitem-container-menu img {
+    width: 250px;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .app__menuitem-container-menu p {
+    font-size: 0.9375em;
+  }
+  .app__menuitem-container {
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .app__menuitem {
+    padding: 0;
+  }
+  .app__menuitem-container-img img {
+    width: 200px;
+    height: auto;
+  }
+  .app__menuitem-container-menu img {
+    width: 150px;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .app__menuitem-container-menu p {
+    font-size: 0.875em;
+  }
+
+  .app__menuitem-container {
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+  }
+  .app__menuitem-buttons {
+    position: absolute;
+    right: 1rem;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .app__menuitem-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .app__menuitem-buttons {
+    position: relative;
+    left: 0;
+    margin-bottom: 1rem;
+  }
+  .app__menuitem-container-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .app__menuitem {
+    margin-top: 1rem;
+  }
+  .app__menuitem-container-menu img {
+    width: 100%;
+    height: auto;
+  }
+  .app__menuitem-container-menu p {
+    font-size: 1rem;
+  }
+}

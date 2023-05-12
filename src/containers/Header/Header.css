@@ -1,0 +1,33 @@
+.app__header-text {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  margin-bottom: 5rem;
+  place-content: center;
+}
+
+.app__header-text h1 {
+  font-family: var(--font-base);
+  font-size: 12rem;
+  font-style: italic;
+  font-weight: 500;
+  z-index: 999;
+}
+
+@media screen and (max-width: 69em) {
+  .app__header-text h1 {
+    font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .app__header-text h1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 30em) {
+  .app__header-text h1 {
+    font-size: 3.5rem;
+  }
+}

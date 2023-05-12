@@ -1,0 +1,99 @@
+.app__navbar {
+  display: flex;
+  position: relative;
+  font-family: var(--font-alt);
+  font-size: 0.85rem;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  height: 3rem;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.sticky {
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background: var(--color-bg);
+}
+
+.app__navbar-links_contaniner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__navbar-logo {
+  margin-top: 0.4rem;
+}
+
+.app__navbar-logo img {
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+}
+
+.app__navbar-links_contaniner p {
+  margin-left: 0.8rem;
+}
+
+.app__navbar-links_contaniner p:hover {
+  text-decoration: underline;
+}
+
+.app__navbar-mobile {
+  display: none;
+  position: relative;
+}
+.app__navbar-mobile svg {
+  border: none;
+  cursor: pointer;
+}
+
+.app__navbar-links_mobile {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-bg);
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 0 0;
+  right: -2rem;
+  top: -0.6rem;
+  gap: 2rem;
+  font-size: 3rem;
+  font-family: var(--font-alt);
+}
+
+.app__nvbar-logotext {
+  font-family: var(--font-base);
+  font-size: 1.2rem;
+  position: absolute;
+  left: 46%;
+  font-style: italic;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 69em) {
+  .app__navbar-mobile svg {
+    z-index: 999;
+  }
+
+  .app__navbar-mobile {
+    display: flex;
+  }
+  .app__navbar-links_contaniner {
+    display: none;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .app__nvbar-logotext {
+    left: 40%;
+  }
+}
